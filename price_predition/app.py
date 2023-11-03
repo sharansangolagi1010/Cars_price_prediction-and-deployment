@@ -17,7 +17,7 @@ st.title("CAR PRICE PREDICITION")
 
 """ cars price prediciton """
 
-path =r"C:\Users\hp\Downloads\cars projest with deployment\columns.json"
+path =r"C:\Users\hp\Downloads\cars projest with deployment\price_predition\columns.json"
 f1=open(path)
 data=json.load(f1)
 data_columns=data["data_columns"]

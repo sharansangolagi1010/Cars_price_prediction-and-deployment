@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd 
-import pickle
 import numpy as np
-import datetime as dt
-import json
 from PIL import Image
+import json
+import pickle
+
 
 
 image=Image.open(r"C:\Users\hp\Downloads\cars projest with deployment\new image.png")

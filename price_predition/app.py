@@ -10,14 +10,14 @@ from sklearn.linear_model import LinearRegression
 from PIL import Image
 
 
-image=Image.open(r"C:\Users\hp\Downloads\cars projest with deployment\price_predition\image.jpg")
+image=Image.open(r"C:\Users\hp\Downloads\cars projest with deployment\price_predition\new image.png")
 st.image(image,caption="car price predicition")
 
 st.title("CAR PRICE PREDICITION")
 
 """ cars price prediciton """
 
-path =r"C:\Users\hp\Downloads\cars projest with deployment\price_predition\columns.js"
+path =r"C:\Users\hp\Downloads\cars projest with deployment\price_predition\columns.json"
 f1=open(path)
 data=json.load(f1)
 data_columns=data["data_columns"]

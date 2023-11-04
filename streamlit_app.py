@@ -7,7 +7,8 @@ import json
 from PIL import Image
 
 
-image=Image.open(r"C:\Users\hp\Downloads\cars projest with deployment\image.jpg")
+image=Image.open(r"C:\Users\hp\Downloads\cars projest with deployment\new image.png")
+
 st.image(image,caption="car price predicition")
 
 st.title("CAR PRICE PREDICITION")

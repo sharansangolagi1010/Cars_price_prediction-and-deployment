@@ -1,12 +1,9 @@
 import streamlit as st
 import pandas as pd 
 import pickle
-import sklearn
 import numpy as np
 import datetime as dt
 import json
-from sklearn.pipeline import Pipeline
-from sklearn.linear_model import LinearRegression
 from PIL import Image
 
 
@@ -17,7 +14,7 @@ st.title("CAR PRICE PREDICITION")
 
 """ cars price prediciton """
 
-path =r"C:\Users\hp\Downloads\cars projest with deployment\columns.json"
+path =r"C:\Users\hp\Downloads\cars projest with deployment\price_predition\columns.json"
 f1=open(path)
 data=json.load(f1)
 data_columns=data["data_columns"]

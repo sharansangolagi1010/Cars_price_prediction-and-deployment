@@ -22,6 +22,7 @@ data_columns=data["data_columns"]
 
 f1.close()
 
+
 with open(r"C:\Users\hp\Downloads\cars projest with deployment\price_predition\LinearRegression.pkl","rb") as f:
     pip=pickle.load(f)
    
@@ -131,7 +132,8 @@ company = st.selectbox("select the company of the car",select_name(name))
 st.write(company)
 
 year=st.number_input('Buying year of the car')
-st.write(year)
+st.write(int(year))
+
 
 
 
@@ -148,11 +150,12 @@ def predict_price(name,company,year,kms_driven,fuel_type):
    return pip.predict(pd.DataFrame([[name,company,year,kms_driven,fuel_type]],columns=("name","company","year","kms_driven","fuel_type")))
 
 if year >= 2000 and kms_driven>=0:
-    st.button("Estimate price")
-    st.write (f"Estimated price of the car is : {abs(predict_price(name,company,year,kms_driven,fuel_type)[0])}")
+        st.button("Estimate price")
+        st.write (f"Estimated price of the car is : {abs(predict_price(name,company,year,kms_driven,fuel_type)[0])}")
 else :
-    st.button("Estimate price")
-    st.write("The year should be minium 2000")
+        st.button("Estimate price")
+        st.write("The year should be minium 2000")
+
 
 
 

@@ -5,6 +5,10 @@ import numpy as np
 import datetime as dt
 import json
 from PIL import Image
+import os
+
+image_path = os.path.join("C:", "Users", "hp", "Downloads", "cars_projest_with_deployment", "new_image.png")
+image = Image.open(image_path)
 
 
 image=Image.open(r"C:\Users\hp\Downloads\cars projest with deployment\price_predition\new image.png")

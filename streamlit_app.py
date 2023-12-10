@@ -1,15 +1,11 @@
 import streamlit as st
 import pandas as pd 
 import numpy as np
-from PIL import Image
 import json
 import pickle
 
 
 
-image=Image.open(r"C:\Users\hp\Downloads\cars projest with deployment\new image.png")
-
-st.image(image,caption="car price predicition")
 
 st.title("CAR PRICE PREDICITION")
 
